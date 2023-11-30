@@ -6,7 +6,7 @@ class Consumer:
     def __init__(self, topic, partition):
         partition_info = TopicPartition(topic, partition)
         self.consumer = KafkaConsumer(
-            bootstrap_servers=['3.16.57.3:9092'],
+            bootstrap_servers=['18.222.175.149:9092'],
             auto_offset_reset='earliest',
             enable_auto_commit=True,
             group_id='my-group',

@@ -4,8 +4,7 @@ import consumer as cs
 from datetime import datetime
 import streamlit as st
 
-#uri = st.secrets["DB_MONGO_URI"]
-uri = "mongodb+srv://a338832:pHMc4cHtxeD4z3sg@vuelos.hyce5yh.mongodb.net/?retryWrites=true&w=majority"
+uri = st.secrets["DB_MONGO_URI"]
 
 def backupMongo():
     consumer = cs.Consumer('vuelos',partition=0)
